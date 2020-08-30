@@ -46,10 +46,11 @@ plot(x,y)
 # git uses 256 SHA hash language to store, so it uses this to find what has changed
 # the commit message will have a number that encodes the name of the commit
 
-# now that we've made initial commit, make changes
+# now that we've made initial commit, make changes and commit
 
 summary(x)
 
+# code getting long, split into two. Put analysis in one, and summaries in other. 
 
 
 
