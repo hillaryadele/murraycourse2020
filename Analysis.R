@@ -34,7 +34,7 @@ git init
 # Make a new file, save as analysis.R
 # write some code: 
 
-x = seq(1, 10, len =1)
+x = seq(1, 10, len =10)
 y = 40*2 + rnorm(10,0,5)
 plot(x,y)
 
@@ -43,7 +43,12 @@ plot(x,y)
 # click the .gitignore file
 # this tells git files that git should ignore completely. Here, it will be R.proj.user, history, etc
 
+# git uses 256 SHA hash language to store, so it uses this to find what has changed
+# the commit message will have a number that encodes the name of the commit
 
+# now that we've made initial commit, make changes
+
+summary(x)
 
 
 
