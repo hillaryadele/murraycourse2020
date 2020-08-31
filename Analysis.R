@@ -93,10 +93,10 @@ git checkout master
 git merge Experimental
 
 
-
-
-
-
+# push to github to store online
+git remote add origin https://github.com/hillaryadele/murraycourse2020.git
+git branch -M master
+git push -u origin master
 
 
 
