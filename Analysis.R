@@ -65,9 +65,12 @@ git tag -a 'V.1' -m 'Version 1'
 # can do a "checkout" of what the file was 2 weeks ago, for example
 # moves head to that time points commit
 
-git checkout #
+
+git checkout c7eefd
 # where # is a commit name
 # for example, go  back to the bug fix and summary commit
+# from here  you can also make another branch
+>>>>>>> Experimental
 
 
 # can do a "reset" also
@@ -77,9 +80,17 @@ git checkout #
 # e.g. one commit to add the word  "fish" 
 # then another  commit to take it away
 
+git  revert HEAD  --no-edit
 
 
+# can create new branches
+# create branch "experimental"
 
+mean(x)
+
+# merge back to master file. Must be ON branch you want to take the changes to.
+git checkout master
+git merge Experimental
 
 
 
