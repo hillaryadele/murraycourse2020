@@ -46,15 +46,37 @@ plot(x,y)
 # git uses 256 SHA hash language to store, so it uses this to find what has changed
 # the commit message will have a number that encodes the name of the commit
 
-# now that we've made initial commit, make changes
+# now that we've made initial commit, make changes and commit
 
 summary(x)
 
+# code getting long, split into two. Put analysis in one, and summaries in other. 
+
+# you might want to tag a certain commit as a milestone, then you can refer to it as its tag
+# for example the script as it was when you submitted a manuscript
+# the below must be done in terminal, not R 
+
+git tag -a 'V.1' -m 'Version 1'
+
+# the name of the tag (i.e. here "V.1") can not have spaces in it
+# view the history, you will see that there is now a "tag"  against the latest commit 
+
+# sometimes you may need to revert to an older version
+# can do a "checkout" of what the file was 2 weeks ago, for example
+# moves head to that time points commit
+
+git checkout c7eefd
+# where # is a commit name
+# for example, go  back to the bug fix and summary commit
+# from here  you can also make another branch
 
 
+# can do a "reset" also
+# totally erases the last commit
 
-
-
+# can do a "revert"
+# e.g. one commit to add the word  "fish" 
+# then another  commit to take it away
 
 
 
