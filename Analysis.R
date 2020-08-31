@@ -86,7 +86,9 @@ git  revert HEAD  --no-edit
 
 mean(x)
 
-
+# merge back to master file. Must be ON branch you want to take the changes to.
+git checkout master
+git merge Experimental
 
 
 
