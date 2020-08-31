@@ -78,7 +78,13 @@ git checkout c7eefd
 # e.g. one commit to add the word  "fish" 
 # then another  commit to take it away
 
+git  revert HEAD  --no-edit
 
+
+# can create new branches
+# create branch "experimental"
+
+mean(x)
 
 
 
